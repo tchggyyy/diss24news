@@ -1,0 +1,498 @@
+{% extends "parts/base.html" %}
+
+{% block title %} 請修改title {% endblock title %}
+
+{% block navbar_list %}
+{% include "parts/_navbar_tab5.html" %}
+{% endblock navbar_list %}
+
+
+{% block page_content %}
+<div class="content-wrapper">
+<div class="content"><!-- For Components documentaion -->
+
+<div class="row">
+<div class="col-lg-6 col-xl-4 col-xxl-4">
+<div class="card card-default mt-7">
+<div class="card-body text-center">
+  <a class="d-block mb-2" data-toggle="modal" data-target="#modal-contact">
+    <div class="image mb-3 d-inline-flex mt-n8">
+      <img src="../static/dbtheme/images/user/user-md-1.jpg" class="img-fluid rounded-circle d-inline-block" alt="Avatar Image">
+    </div>
+
+    <h5>周子瀚</h5>
+  </a>
+
+  <ul class="list-unstyled d-inline-block mb-5">
+    <li class="d-flex mb-1">
+      <i class="mdi mdi-map mr-1"></i>
+      <span>特徵處理、預測模型</span>
+    </li>
+    <li class="d-flex">
+      <i class="mdi mdi-email mr-1"></i>
+      <span>chowtzuhan@gmail.com</span>
+    </li>
+  </ul> 
+
+  <div class="row justify-content-center">
+    <div class="col-3 px-1">
+      <div class=" circle"
+        data-size="60"
+        data-value="1"
+        data-thickness="4"
+        data-fill="{
+          &quot;color&quot;: &quot;#fe5461&quot;
+        }"
+        >
+        <div class="circle-content">
+          <h6 class="text-uppercase">Hadoop</h6>
+          <h6>100%</h6>
+          <strong></strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3 px-1">
+      <div class=" circle"
+        data-size="60"
+        data-value="1"
+        data-thickness="4"
+        data-fill="{
+          &quot;color&quot;: &quot;#fec400&quot;
+        }"
+        >
+        <div class="circle-content">
+          <h6 class="text-uppercase">MySQL</h6>
+          <h6>100%</h6>
+          <strong></strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3 px-1">
+      <div class=" circle"
+        data-size="60"
+        data-value="0.50"
+        data-thickness="4"
+        data-fill="{
+          &quot;color&quot;: &quot;#35D00E&quot;
+        }"
+        >
+        <div class="circle-content">
+          <h6 class="text-uppercase">風險模型</h6>
+          <h6>50%</h6>
+          <strong></strong>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-6 col-xl-4 col-xxl-4">
+<div class="card card-default mt-7">
+<div class="card-body text-center">
+  <a class="d-block mb-2" data-toggle="modal" data-target="#modal-contact">
+    <div class="image mb-3 d-inline-flex mt-n8">
+      <img src="../static/dbtheme/images/user/user-md-2.jpg" class="img-fluid rounded-circle d-inline-block" alt="Avatar Image">
+    </div>
+
+    <h5>詹翊</h5>
+  </a>
+
+  <ul class="list-unstyled d-inline-block mb-5">
+    <li class="d-flex mb-1">
+      <i class="mdi mdi-map mr-1"></i>
+      <span>資料收集、新聞爬蟲</span>
+    </li>
+    <li class="d-flex">
+      <i class="mdi mdi-email mr-1"></i>
+      <span>chanyi0811@gmail.com</span>
+    </li>
+  </ul> 
+
+  <div class="row justify-content-center">
+    <div class="col-3 px-1">
+      <div class=" circle"
+        data-size="60"
+        data-value="1"
+        data-thickness="4"
+        data-fill="{
+          &quot;color&quot;: &quot;#fe5461&quot;
+        }"
+        >
+        <div class="circle-content">
+          <h6 class="text-uppercase">Hadoop</h6>
+          <h6>100%</h6>
+          <strong></strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3 px-1">
+      <div class=" circle"
+        data-size="60"
+        data-value="1"
+        data-thickness="4"
+        data-fill="{
+          &quot;color&quot;: &quot;#fec400&quot;
+        }"
+        >
+        <div class="circle-content">
+          <h6 class="text-uppercase">MySQL</h6>
+          <h6>100%</h6>
+          <strong></strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3 px-1">
+      <div class=" circle"
+        data-size="60"
+        data-value="0.50"
+        data-thickness="4"
+        data-fill="{
+          &quot;color&quot;: &quot;#35D00E&quot;
+        }"
+        >
+        <div class="circle-content">
+          <h6 class="text-uppercase">風險模型</h6>
+          <h6>50%</h6>
+          <strong></strong>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-6 col-xl-4 col-xxl-4">
+<div class="card card-default mt-7">
+<div class="card-body text-center">
+  <a class="d-block mb-2" data-toggle="modal" data-target="#modal-contact">
+    <div class="image mb-3 d-inline-flex mt-n8">
+      <img src="../static/dbtheme/images/user/user-md-3.jpg" class="img-fluid rounded-circle d-inline-block" alt="Avatar Image">
+    </div>
+
+    <h5>江敏慈</h5>
+  </a>
+
+  <ul class="list-unstyled d-inline-block mb-5">
+    <li class="d-flex mb-1">
+      <i class="mdi mdi-map mr-1"></i>
+      <span>資料收集、新聞爬蟲</span>
+    </li>
+    <li class="d-flex">
+      <i class="mdi mdi-email mr-1"></i>
+      <span>d12356k@gmail.com</span>
+    </li>
+  </ul> 
+
+  <div class="row justify-content-center">
+    <div class="col-3 px-1">
+      <div class=" circle"
+        data-size="60"
+        data-value="1"
+        data-thickness="4"
+        data-fill="{
+          &quot;color&quot;: &quot;#fe5461&quot;
+        }"
+        >
+        <div class="circle-content">
+          <h6 class="text-uppercase">Hadoop</h6>
+          <h6>100%</h6>
+          <strong></strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3 px-1">
+      <div class=" circle"
+        data-size="60"
+        data-value="1"
+        data-thickness="4"
+        data-fill="{
+          &quot;color&quot;: &quot;#fec400&quot;
+        }"
+        >
+        <div class="circle-content">
+          <h6 class="text-uppercase">MySQL</h6>
+          <h6>100%</h6>
+          <strong></strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3 px-1">
+      <div class=" circle"
+        data-size="60"
+        data-value="0.50"
+        data-thickness="4"
+        data-fill="{
+          &quot;color&quot;: &quot;#35D00E&quot;
+        }"
+        >
+        <div class="circle-content">
+          <h6 class="text-uppercase">風險模型</h6>
+          <h6>50%</h6>
+          <strong></strong>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<div class="row">
+
+<div class="col-lg-6 col-xl-4 col-xxl-4">
+<div class="card card-default mt-7">
+<div class="card-body text-center">
+  <a class="d-block mb-2" data-toggle="modal" data-target="#modal-contact">
+    <div class="image mb-3 d-inline-flex mt-n8">
+      <img src="../static/dbtheme/images/user/user-md-4.jpg" class="img-fluid rounded-circle d-inline-block" alt="Avatar Image">
+    </div>
+
+    <h5>王昱喆</h5>
+  </a>
+
+  <ul class="list-unstyled d-inline-block mb-5">
+    <li class="d-flex mb-1">
+      <i class="mdi mdi-map mr-1"></i>
+      <span>資料收集、視覺化網站</span>
+    </li>
+    <li class="d-flex">
+      <i class="mdi mdi-email mr-1"></i>
+      <span>jerry55665566@gmail.com</span>
+    </li>
+  </ul>
+  
+  <div class="row justify-content-center">
+    <div class="col-3 px-1">
+      <div class=" circle"
+        data-size="60"
+        data-value="0.55"
+        data-thickness="4"
+        data-fill="{
+          &quot;color&quot;: &quot;#fec400&quot;
+        }"
+        >
+        <div class="circle-content">
+          <h6 class="text-uppercase">html</h6>
+          <h6>55%</h6>
+          <strong></strong>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-3 px-1">
+      <div class=" circle"
+        data-size="60"
+        data-value="1"
+        data-thickness="4"
+        data-fill="{
+          &quot;color&quot;: &quot;#35D00E&quot;
+        }"
+        >
+        <div class="circle-content">
+          <h6 class="text-uppercase">css</h6>
+          <h6>100%</h6>
+          <strong></strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3 px-1">
+      <div class=" circle"
+        data-size="60"
+        data-value="0.20"
+        data-thickness="4"
+        data-fill="{
+          &quot;color&quot;: &quot;#fe5461&quot;
+        }"
+        >
+        <div class="circle-content">
+          <h6 class="text-uppercase">js</h6>
+          <h6>20%</h6>
+          <strong></strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-6 col-xl-4 col-xxl-4">
+<div class="card card-default mt-7">
+<div class="card-body text-center">
+  <a class="d-block mb-2" data-toggle="modal" data-target="#modal-contact">
+    <div class="image mb-3 d-inline-flex mt-n8">
+      <img src="../static/dbtheme/images/user/user-md-5.jpg" class="img-fluid rounded-circle d-inline-block" alt="Avatar Image">
+    </div>
+
+    <h5>蔡雨安</h5>
+  </a>
+
+  <ul class="list-unstyled d-inline-block mb-5">
+    <li class="d-flex mb-1">
+      <i class="mdi mdi-map mr-1"></i>
+      <span>環境建置、風險模型</span>
+    </li>
+    <li class="d-flex">
+      <i class="mdi mdi-email mr-1"></i>
+      <span>tchggyyy@gmail.com</span>
+    </li>
+  </ul>
+
+  <div class="row justify-content-center">
+    <div class="col-3 px-1">
+      <div class=" circle"
+        data-size="60"
+        data-value="1"
+        data-thickness="4"
+        data-fill="{
+          &quot;color&quot;: &quot;#fe5461&quot;
+        }"
+        >
+        <div class="circle-content">
+          <h6 class="text-uppercase">Hadoop</h6>
+          <h6>100%</h6>
+          <strong></strong>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-3 px-1">
+      <div class=" circle"
+        data-size="60"
+        data-value="1"
+        data-thickness="4"
+        data-fill="{
+          &quot;color&quot;: &quot;#fec400&quot;
+        }"
+        >
+        <div class="circle-content">
+          <h6 class="text-uppercase">MySQL</h6>
+          <h6>100%</h6>
+          <strong></strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3 px-1">
+      <div class=" circle"
+        data-size="60"
+        data-value="0.50"
+        data-thickness="4"
+        data-fill="{
+          &quot;color&quot;: &quot;#35D00E&quot;
+        }"
+        >
+        <div class="circle-content">
+          <h6 class="text-uppercase">風險模型</h6>
+          <h6>50%</h6>
+          <strong></strong>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-6 col-xl-4 col-xxl-4">
+<div class="card card-default mt-7">
+<div class="card-body text-center">
+  <a class="d-block mb-2" data-toggle="modal">
+    <div class="image mb-3 d-inline-flex mt-n8">
+      <img src="../static/dbtheme/images/user/u6.jpg" class="img-fluid rounded-circle d-inline-block" alt="Avatar Image">
+    </div>
+
+    <h5>李佳儒</h5>
+  </a>
+
+  <ul class="list-unstyled d-inline-block mb-5">
+    <li class="d-flex mb-1">
+      <i class="mdi mdi-map mr-1"></i>
+      <span>進度管理</span>
+    </li>
+    <li class="d-flex">
+      <i class="mdi mdi-email mr-1"></i>
+      <span>sherwin8671@gmail.com</span>
+    </li>
+  </ul>
+
+  <div class="row justify-content-center">
+    <div class="col-3 px-1">
+      <div class=" circle"
+        data-size="60"
+        data-value="1"
+        data-thickness="4"
+        data-fill="{
+          &quot;color&quot;: &quot;#fe5461&quot;
+        }"
+        >
+        <div class="circle-content">
+          <h6 class="text-uppercase">Hadoop</h6>
+          <h6>100%</h6>
+          <strong></strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3 px-1">
+      <div class=" circle"
+        data-size="60"
+        data-value="1"
+        data-thickness="4"
+        data-fill="{
+          &quot;color&quot;: &quot;#fec400&quot;
+        }"
+        >
+        <div class="circle-content">
+          <h6 class="text-uppercase">MySQL</h6>
+          <h6>100%</h6>
+          <strong></strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3 px-1">
+      <div class=" circle"
+        data-size="60"
+        data-value="0.50"
+        data-thickness="4"
+        data-fill="{
+          &quot;color&quot;: &quot;#35D00E&quot;
+        }"
+        >
+        <div class="circle-content">
+          <h6 class="text-uppercase">風險模型</h6>
+          <h6>50%</h6>
+          <strong></strong>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+</div>
+
+
+</div>
+
+</div>
+</div>
+{% endblock page_content %}

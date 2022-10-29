@@ -1,0 +1,62 @@
+{% extends "parts/base.html" %}
+
+{% block title %} News {% endblock title %}
+
+{% block navbar_list %}
+{% include "parts/_navbar_tab2.html" %}
+{% endblock navbar_list %}
+
+
+{% block page_content %}
+{{ super() }}
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+<form class="form-inline" method="POST" action="/news">
+    <div class="row input-group-newsletter">
+        <div class="col">
+            <select class="form-control" name="send">
+
+                <option selected value ="default" >Please select...
+                    {% for i in range(opt) %}
+                <option name="send" value="{{ num[i] }}" id="{{ num[i] }}">{{num[i]}}</option>
+                {% endfor %}
+                </option>
+
+            </select>
+            <!-- <input class="form-control" id="testInput" name="url" style="width: 100%" type="search" placeholder="請選擇月份"> -->
+        </div>
+        <div class="col-auto">
+            <button class="btn btn-primary" type="submit">Search</button>
+        </div>
+    </div>
+</form>
+<div>
+
+    <table id="data" class="table table-light table-striped table-hover mt-5 table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Tag</th>
+                <th scope="col">Tittle</th>
+                <th scope="col">Content</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for col in outputs.values %}
+            <tr>
+                <td>{{ col[0].strftime('%m-%d') }}</td>
+                <td>{{ col[1] }}</td>
+                <td><a href="{{ col[4] }}">{{ col[2] }}</a></td>
+                <td>{{ col[3][:103] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#data').DataTable();
+    });
+</script>
+
+{% endblock page_content %}
